@@ -38,14 +38,36 @@ const siteContent = {
 };
 
 // Images
+// Logo image 
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
-
+// CTA image
 let ctaimg = document.getElementById("cta-img");
 ctaimg.setAttribute('src', siteContent["cta"]["img-src"]);
-
+// Middle image
 let midimg = document.getElementById("middle-img");
 midimg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-// Navbar
+
+// Nav Bar
+const newNav = document.querySelectorAll('nav a');
+newNav[0].textContent = "Services";
+newNav[1].textContent = "Product";
+newNav[2].textContent = "Vision";
+newNav[3].textContent = "Features";
+newNav[4].textContent = "About";
+newNav[5].textContent = "Contact";
+
+// Additional Nav Item
+// let addMenu = document.createElement("");
+
+// CTA
+
+let mainHeader = document.querySelector("h1");
+mainHeader.textContent = "DOM IS AWESOME";
+
+let button = document.querySelector("button");
+button.textContent = "Get Started";
+
+// Main-Content
 
