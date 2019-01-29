@@ -40,7 +40,7 @@ const siteContent = {
 // Images
 // Logo image 
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"]);
+logo.setAttribute('src', siteContent["nav"]["img-src"])
 // CTA image
 let ctaimg = document.getElementById("cta-img");
 ctaimg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -63,6 +63,28 @@ newNav[5].textContent = "Contact";
 // let newItem = document.createTextNode("Blog");
 // addMenu.appendChild(newItem);
 //* NEED TO FIX */
+
+// Links to Nav
+// const appendNavItem = function (element, text, attr) {
+//   const newListItem = document.createElement(element);
+//   newListItem.innerText = text;
+//   newListItem.href = attr;
+//   navUl.append(newListItem);
+//   return newListItem;
+// }
+// const prependNavItem = function (element, text, attr) {
+//   const newListItem = document.createElement(element);
+//   newListItem.innerText = text;
+//   newListItem.href = attr;
+//   navUl.prepend(newListItem);
+//   return newListItem;
+// }
+
+// appendNavItem('a', 'blog', '#');
+// prependNavItem('a', 'Article', '#');
+
+
+
 
 // Add Styling to Nav
 let navA = document.querySelectorAll("nav a")
