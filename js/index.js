@@ -29,7 +29,7 @@ const siteContent = {
   "contact": {
     "contact-h4" : "Contact",
     "address" : "123 Way 456 Street Somewhere, USA",
-    "phone" : "1 (888) 888-8888",
+    "phone" : "1 (888) 888-8888 ",
     "email" : "sales@greatidea.io",
   },
   "footer": {
@@ -58,8 +58,17 @@ newNav[3].textContent = "Features";
 newNav[4].textContent = "About";
 newNav[5].textContent = "Contact";
 
-// Additional Nav Item
-// let addMenu = document.createElement("");
+// // Additional Nav Item
+// let addMenu = document.createElement("a");
+// let newItem = document.createTextNode("Blog");
+// addMenu.appendChild(newItem);
+//* NEED TO FIX */
+
+// Add Styling to Nav
+let navA = document.querySelectorAll("nav a")
+for (i = 0; i < navA.length; i++){
+  navA[i].style.color = "green";
+}
 
 // CTA
 
@@ -70,4 +79,23 @@ let button = document.querySelector("button");
 button.textContent = "Get Started";
 
 // Main-Content
+const subHeaders = document.querySelectorAll("h4");
+subHeaders[0].textContent = "Features";
+subHeaders[1].textContent = "About";
+subHeaders[2].textContent = "Services";
+subHeaders[3].textContent = "Product";
+subHeaders[4].textContent = "Vision";
+subHeaders[5].textContent = "Contact";
 
+const paragraph = document.querySelectorAll("p");
+paragraph[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+paragraph[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+paragraph[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+paragraph[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+paragraph[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+paragraph[5].textContent = "123 Way 456 Street Somewhere, USA";
+paragraph[6].textContent = "1 (888) 888-8888";
+paragraph[7].textContent = "Sales@greatidea.io";
+
+//Footer
+paragraph[8].textContent = "Copyright Great Idea! 2018";
